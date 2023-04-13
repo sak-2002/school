@@ -1,0 +1,113 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Gideon Roman', cursive;
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/kleit.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+
+nav img {
+    width: 120px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+.nav-links ul li ::after{
+    width: 0%;
+    background-color: #f44336;
+    height: 2px;
+   content: '';
+   display: block;
+   margin: auto;
+}
+.nav-links ul li :hover::after{
+        width: 100%;
+        transition: 0.5s;
+}
+.text-box{
+    width: 90%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    color: #fff;
+    font-size: 14px;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid white;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    padding: 12px 34px;
+    font-size: 13px;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background-color: #f44336;
+    transition: 1s;
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        top: 0;
+        right: 0;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        position: absolute;
+        text-align: left;
+        z-index: 2;
+    }
+}
